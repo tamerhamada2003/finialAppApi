@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OnBoardingAndSplash.OnBoardingTowActivity">
+
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="378dp"
+                android:layout_height="356dp"
+                android:background="@drawable/ic_onbooedingtow"
+                android:layout_marginTop="135dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="520dp"
+                android:gravity="center"
+                android:padding="5dp"
+                android:fontFamily="@font/seg_ui_semibold"
+
+                android:textColor="#0E9CF9"
+                android:textSize="21sp"
+                android:text="Fast reservation with technicians \n and craftsmen"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.504"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btn_onBoardingTow"
+                android:layout_width="330dp"
+                android:layout_height="55dp"
+                android:background="@drawable/shape_button"
+
+                android:layout_marginHorizontal="35dp"
+                android:layout_marginTop="723dp"
+                android:shadowColor="#E9C75E"
+
+                android:shadowDy="20"
+                android:elevation="20sp"
+                android:text="NEXT"
+                android:layout_marginBottom="25dp"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:fontFamily="@font/segoe_ui_bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
