@@ -7,11 +7,11 @@ import androidx.viewpager2.adapter.FragmentStateAdapter;
 
 import java.util.ArrayList;
 
-public class ViewPagerRegisterAdapter extends FragmentStateAdapter {
+public class ViewPagerAdapter extends FragmentStateAdapter {
 
     ArrayList<Fragment>fragments;
 
-    public ViewPagerRegisterAdapter(@NonNull FragmentActivity fragmentActivity, ArrayList<Fragment> fragments) {
+    public ViewPagerAdapter(@NonNull FragmentActivity fragmentActivity, ArrayList<Fragment> fragments) {
         super(fragmentActivity);
         this.fragments = fragments;
     }

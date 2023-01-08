@@ -1,14 +1,17 @@
-package com.example.applicatioprojectxd;
+package com.example.applicatioprojectxd.Classes;
 
-public class Tab {
-   private String name ;
-  private   int id;
 
-    public Tab(String name, int id) {
+public class AllWork {
+    private String name;
+    private int id;
+
+    public AllWork(String name, int id) {
         this.name = name;
         this.id = id;
     }
-
+    public AllWork(String name) {
+        this.name = name;
+    }
 
     public String getName() {
         return name;
@@ -26,3 +29,5 @@ public class Tab {
         this.id = id;
     }
 }
+
+

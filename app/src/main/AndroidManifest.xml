@@ -3,6 +3,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.applicatioprojectxd">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -12,20 +21,57 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ApplicatioProjectXd"
+        android:usesCleartextTraffic="true"
         tools:targetApi="31">
+
         <activity
-            android:name=".Activity.RegisterActivity"
-            android:exported="true" >
+            android:name=".Activity.MapActivity"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCDli_jjC6YExNzetcExfey9qLBE0sUK9o" />
+
+        <activity
+            android:name=".Activity.DetailsOrderActivity"
+            android:exported="true">
+
         </activity>
         <activity
-            android:name=".Activity.LoginActivity"
+            android:name=".Activity.DetailsServiceProviderActivity"
             android:exported="false" />
         <activity
-            android:name=".OnBoardingAndSplash.OnBoardingOneActivity"
+            android:name=".Activity.HomeServiceProviderActivity"
+            android:exported="true">
+
+        </activity>
+        <activity
+            android:name=".Activity.OrderDoneActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.LocationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.ProblemActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.AllWorkActivity"
+            android:exported="true" >
+
+        </activity>
+
+        <activity
+            android:name=".Activity.RegisterActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.LoginActivity"
             android:exported="true">
 
 
         </activity>
+        <activity
+            android:name=".OnBoardingAndSplash.OnBoardingOneActivity"
+            android:exported="true" />
         <activity
             android:name=".OnBoardingAndSplash.OnBoardingTowActivity"
             android:exported="false" />
@@ -34,12 +80,15 @@
             android:exported="false" />
         <activity
             android:name=".OnBoardingAndSplash.SplashScreenActivity"
-            android:exported="true">
+            android:exported="true" >
             <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-                <category android:name="android.intent.category.LAUNCHER"/>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+
     </application>
 
 </manifest>

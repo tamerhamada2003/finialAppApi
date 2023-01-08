@@ -17,6 +17,7 @@ public class OnBoardingOneActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_on_boording_one);
+        getSupportActionBar().hide();
 
 
         Button button =findViewById(R.id.btn_onBoardingOne);

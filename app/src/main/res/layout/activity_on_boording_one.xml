@@ -22,16 +22,33 @@
             android:layout_height="wrap_content">
 
             <ImageView
-                android:id="@+id/imageView"
                 android:layout_width="0dp"
                 android:layout_height="275dp"
                 android:scaleType="fitXY"
-                android:src="@drawable/image"
+                android:src="@drawable/image5"
+                android:visibility="gone"
                 android:layout_marginTop="177dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/imageView"
+                android:layout_width="0dp"
+                android:layout_height="400dp"
+                android:layout_gravity="bottom"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.475"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.402"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                android:scaleType="centerCrop"
+                android:layout_marginTop="59dp"
+
+                app:lottie_rawRes="@raw/one" />
 
             <TextView
                 android:id="@+id/textView"
@@ -52,24 +69,19 @@
 
             <Button
                 android:id="@+id/btn_onBoardingOne"
-                android:layout_width="330dp"
-                android:layout_height="55dp"
-                android:background="@drawable/shape_button"
-                android:layout_marginHorizontal="35dp"
-                android:layout_marginBottom="25dp"
-                android:shadowColor="#E9C75E"
-                android:layout_marginTop="723dp"
-
-                android:shadowDy="2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/ic_btn"
+                android:fontFamily="@font/segoe_ui_bold"
+                android:paddingBottom="21dp"
                 android:text="NEXT"
 
                 android:textColor="@color/white"
-                android:textSize="18sp"
-                android:fontFamily="@font/segoe_ui_bold"
-                app:layout_constraintBottom_toBottomOf="parent"
+                android:textSize="20sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toBottomOf="@+id/textView" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

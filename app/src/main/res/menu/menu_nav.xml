@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+
+        android:id="@+id/nav_service"
+        android:title="Service"
+        android:icon="@drawable/logo"
+
+        />
+
+    <item
+        android:id="@+id/nav_orders"
+        android:title="Orders"
+        android:icon="@drawable/ic_receipt"
+
+        />
+
+
+</menu>
